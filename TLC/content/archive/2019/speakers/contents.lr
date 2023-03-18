@@ -7,7 +7,7 @@ body:
 #### speaker ####
 speaker_name: Katherine Scrupa
 ----
-speaker_bio: Katherine is a LAN Administrator whose (current) favourite past time is digging into Windows Internals and playing with PowerShell. She is Manitoba UNIX User Group board member (2010-current), has a Network Technology, CCNA (Hons.) from RRC, and holds a GIAC Certified Windows Security Administrator (GCWN) Certification.
+speaker_bio: Katherine is a LAN Administrator whose (current) favourite past time is digging into Windows Internals and playing with PowerShell. She is a Manitoba UNIX User Group board member (2010-current), has a Network Technology, CCNA (Hons.) from RRC, and holds a GIAC Certified Windows Security Administrator (GCWN) Certification.
 ----
 talk_title: Rad Omens: The Good and Evil Uses of WMI, CIM
 ----

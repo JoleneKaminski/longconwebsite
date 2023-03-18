@@ -3,5 +3,8 @@
 {% block body %}
   <h2>Speakers {{ this.year }}</h2>
   <p>{{ this.header }}</p>
+  {% for blk in this.body.blocks %}
+  	{{ blk.speaker_name}}
+  {% endfor %}
   {{ this.body }}
 {% endblock %}
