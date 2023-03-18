@@ -2,5 +2,8 @@ title: Welcome to The Long Con!
 ---
 body:
 
+<img src="longcon.svg" />
+
 HELLO! This is a basic demo website that shows how to use Lektor for a basic
 website with some pages.
+
