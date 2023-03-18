@@ -1,6 +1,7 @@
 body {
     font-family: 'Verdana', sans-serif;
     margin: 50px 25px;
+    background: #000000;
 }
 
 a {
@@ -8,7 +9,7 @@ a {
 }
 
 a:hover {
-    color: #33bbdf;
+    color: #97FA1E;
 }
 
 header, footer, div.page {
@@ -16,6 +17,10 @@ header, footer, div.page {
     margin: 0 auto;
     background: #000000;
     padding: 20px 30px;
+}
+
+footer {
+    color:#ffffff;
 }
 
 header h1 {
@@ -38,7 +43,8 @@ header nav ul li {
 }
 
 div.page {
-    background: #ffffff;
+    background: #000000;
+    color: #ffffff;
 }
 
 img.inverted {
@@ -71,4 +77,8 @@ img.inverted {
   background-image: -o-linear-gradient(top, #4ec42d, #2e8f18);
   background-image: linear-gradient(to bottom, #4ec42d, #2e8f18);
   text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }

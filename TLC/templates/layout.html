@@ -10,8 +10,10 @@
         <li{% if this._path == '/' %} class="active"{% endif
           %}><a href="{{ '/'|url }}">Welcome</a></li>
         {% for href, title in [
-          ['/projects', 'Projects'],
-          ['/about', 'About']
+          ['/about', 'About'],
+          ['/speakers', 'Schedule & Speakers'],
+          ['/sponsors', 'Sponsors'],
+          ['/contact', 'Contact']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
