@@ -4,26 +4,30 @@
   <h2>Speakers {{ this.year }}</h2>
   <p>{{ this.header }}</p>
   {% if this.body %}
-  <table>
-  	<tr>
-  		<th>Time</th>
-  		<th>Event</th>
-  	</tr>
-  {% for blk in this.body.blocks %}
-  	{% if blk._flowblock == 'speaker' %}
-  	<tr>
-  		<td>{{ blk.time }}</td>
-  		<td>{{ blk.speaker_name }} - <a href="#{{ blk.talk_title }}">{{ blk.talk_title }}</a></td>
-  	</tr>
-  	{% elif blk._flowblock == 'event' %}
-  	<tr>
-  		<td>{{ blk.time }}</td>
-  		<td>{{ blk.title }}</td>
-  	</tr>
-  	{% endif %}
-  {% endfor %}
+	 {% for day, blks in this.body.blocks|groupby("day") %}
+	  <h3>{{ day }}</h3>
+	  <table>
+	  	<tr>
+	  		<th>Time</th>
+	  		<th>Event</th>
+	  	</tr>
+		  {% for blk in blks %}
+		  	{% if blk._flowblock == 'speaker' %}
+		  	<tr>
+		  		<td>{{ blk.time }}</td>
+		  		<td>{{ blk.speaker_name }} - <a href="#{{ blk.title }}">{{ blk.title }}</a></td>
+		  	</tr>
+		  	{% elif blk._flowblock == 'event' %}
+		  	<tr>
+		  		<td>{{ blk.time }}</td>
+		  		<td>{{ blk.title }}</td>
+		  	</tr>
+		  	{% endif %}
+		  {% endfor %}
+		  </table>
+  	{% endfor %}
   {% endif %}
-  </table>
+  
   {% for blk in this.body.blocks %}
   	{% if blk._flowblock == 'speaker' %}
   		{{ blk }} 

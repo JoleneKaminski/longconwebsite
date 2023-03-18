@@ -8,33 +8,41 @@ body:
 title: Registration
 ----
 time: 11:00-11:30
+----
+day: Saturday
 #### speaker ####
 speaker_name: Katherine Scrupa
 ----
 speaker_bio: Katherine is a LAN Administrator whose (current) favourite past time is digging into Windows Internals and playing with PowerShell. She is a Manitoba UNIX User Group board member (2010-current), has a Network Technology, CCNA (Hons.) from RRC, and holds a GIAC Certified Windows Security Administrator (GCWN) Certification.
 ----
-talk_title: Rad Omens: The Good and Evil Uses of WMI, CIM
+title: Rad Omens: The Good and Evil Uses of WMI, CIM
 ----
 talk_description: Curious about Windows Management Instrumentation (WMI)? Katherine will explain what WMI is, and show you a variety of tools to navigate and query Windows’ implementation of WBEM and CIM. Become enlightened on how WMI can be used… and abused.
 ----
 video_id: 7EgDqyPpmwQ
 ----
 time: 11:30-12:20
+----
+day: Saturday
 #### speaker ####
 speaker_name: Richard Frovarp
 ----
 speaker_bio: Richard Frovarp is a principal software engineer at North Dakota State University. There he focuses on identity and access management, federated authentication, and integrating a wide variety of systems together.
 ----
-talk_title: Capturing WPA2 Enterprise credentials with a Pi
+title: Capturing WPA2 Enterprise credentials with a Pi
 ----
 talk_description: WPA2 Enterprise is a very common method of wireless authentication used at large organizations. These credentials can be harvested using a Raspberry Pi in many cases. I will cover how to setup the Pi using hostapd-wpe, and how various clients respond to the attacking Pi. I will also go over the most common SSID in use for higher education and the challenges that presents.
 ----
 video_id: FcpoF8lrbWM
 ----
 time: 12:30-12:50
+----
+day: Saturday
 #### event ####
 title: Lunch Break - Catered
 ----
 time: 13:00-14:00
+----
+day: Saturday
 ---
 year: 2019
