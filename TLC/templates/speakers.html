@@ -3,8 +3,19 @@
 {% block body %}
   <h2>Speakers {{ this.year }}</h2>
   <p>{{ this.header }}</p>
+  <table>
+  	<tr>
+  		<th>Time</th>
+  		<th>Speaker</th>
+  		<th>Title</th>
+  	</tr>
   {% for blk in this.body.blocks %}
-  	{{ blk.speaker_name}}
+  	<tr>
+  		<td>{{ blk.time }}</td>
+  		<td>{{ blk.speaker_name }}</td>
+  		<td>{{ blk.talk_title }}</td>
+  	</tr>
   {% endfor %}
+  </table>
   {{ this.body }}
 {% endblock %}
