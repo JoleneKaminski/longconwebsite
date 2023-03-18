@@ -2,8 +2,6 @@ title: Welcome to The Long Con!
 ---
 body:
 
-<img src="longcon.svg" />
-
-HELLO! This is a basic demo website that shows how to use Lektor for a basic
-website with some pages.
+Long Con 2023 coming November 4-5
+<button type="button" class="btn">Join Our Slack Team</button>
 

@@ -4,7 +4,7 @@ body {
 }
 
 a {
-    color: #2a99b6;
+    color: #ffffff;
 }
 
 a:hover {
@@ -14,12 +14,12 @@ a:hover {
 header, footer, div.page {
     width: 760px;
     margin: 0 auto;
-    background: #daeef3;
+    background: #000000;
     padding: 20px 30px;
 }
 
 header h1 {
-    color: #169bbd;
+    color: #ffffff;
     margin: 0;
     font-weight: normal;
     font-size: 42px;
@@ -38,5 +38,37 @@ header nav ul li {
 }
 
 div.page {
-    background: #f1fbfe;
+    background: #ffffff;
+}
+
+img.inverted {
+    filter: invert(100%);
+}
+
+.btn {
+  background: #34d958;
+  background-image: -webkit-linear-gradient(top, #34d958, #19ab28);
+  background-image: -moz-linear-gradient(top, #34d958, #19ab28);
+  background-image: -ms-linear-gradient(top, #34d958, #19ab28);
+  background-image: -o-linear-gradient(top, #34d958, #19ab28);
+  background-image: linear-gradient(to bottom, #34d958, #19ab28);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f8c2a 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #4ec42d;
+  background-image: -webkit-linear-gradient(top, #4ec42d, #2e8f18);
+  background-image: -moz-linear-gradient(top, #4ec42d, #2e8f18);
+  background-image: -ms-linear-gradient(top, #4ec42d, #2e8f18);
+  background-image: -o-linear-gradient(top, #4ec42d, #2e8f18);
+  background-image: linear-gradient(to bottom, #4ec42d, #2e8f18);
+  text-decoration: none;
 }
