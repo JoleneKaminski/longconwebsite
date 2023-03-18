@@ -4,6 +4,10 @@ header: This is a page for a previous year
 ---
 body:
 
+#### event ####
+title: Registration
+----
+time: 11:00-11:30
 #### speaker ####
 speaker_name: Katherine Scrupa
 ----
@@ -28,5 +32,9 @@ talk_description: WPA2 Enterprise is a very common method of wireless authentica
 video_id: FcpoF8lrbWM
 ----
 time: 12:30-12:50
+#### event ####
+title: Lunch Break - Catered
+----
+time: 13:00-14:00
 ---
 year: 2019
