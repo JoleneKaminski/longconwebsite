@@ -1,8 +1,6 @@
-_model: page
+_model: speakers
 ---
-title: Speakers
----
-body:
+header:
 
 Our Call for Presentations for The Long Con 2023 is not open yet.
 
