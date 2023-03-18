@@ -1,0 +1,29 @@
+_model: speakers
+---
+year: 2023
+---
+speakers:
+
+#### speaker ####
+speaker_name: Alex Weber
+----
+speaker_bio: This is my bio
+----
+talk_title: Doing Stuff
+----
+talk_description: This is a talk about doing stuff
+----
+video_id: 
+---
+body:
+
+#### speaker ####
+speaker_name: Alex Weber
+----
+speaker_bio: This is a Bio 2
+----
+talk_title: This is a Talk Title
+----
+talk_description: This is a talk description
+----
+video_id: 7EgDqyPpmwQ
