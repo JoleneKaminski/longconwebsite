@@ -1,0 +1,42 @@
+_model: sponsors
+---
+header:
+
+Thank you to our sponsors for making The Long Con 2019 a reality!
+
+If you would like to be added to our email list for future sponsorship opportunities, please <a href="https://thelongcon.us19.list-manage.com/subscribe?u=c036f4bbea51bd9cd747e89bb&amp;id=13bc529231">sign up here!</a>
+---
+body:
+
+#### sponsor ####
+sponsor_name: Cisco Security
+----
+sponsor_image: /sponsorimages/cisco_security_vertical.png
+----
+website_url: https://www.cisco.com/site/ca/en/products/security/index.html
+----
+level: Platinum
+#### sponsor ####
+sponsor_name: FireEye
+----
+sponsor_image: /sponsorimages/fireeye.png
+----
+website_url: https://www.trellix.com/en-us/index.html
+----
+level: Platinum
+#### sponsor ####
+sponsor_name: Powerland
+----
+sponsor_image: /sponsorimages/powerland.svg
+----
+website_url: https://powerland.ca/
+----
+level: Platinum
+#### sponsor ####
+sponsor_name: Paolo Alto Networks
+----
+sponsor_image: /sponsorimages/palo_alto.png
+----
+website_url: https://www.paloaltonetworks.com/
+----
+level: Gold
