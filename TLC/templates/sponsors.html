@@ -1,21 +1,26 @@
 {% extends "layout.html" %}
 {% block title %}Sponsors {{ this.year }}{% endblock %}
 {% block body %}
-	<style>
-		img.sponsorlogo { max-height:200; max-width:200px; display:inline-block; padding:20px 50px; }
-		div.page {
-			background: #fff;
-			color: #000;
-		}
-	</style>
+  <style>
+    img.sponsorlogo { max-height:200; max-width:200px; display:inline-block; padding:20px 50px; }
+    div.page {
+      background: #fff;
+      color: #000;
+    }
+  </style>
   <h2>Sponsors {{ this.year }}</h2>
   <p>{{ this.header }}</p>
   {% if this.body %}
-  	{% for level, blks in this.body.blocks|groupby("level") %}
-  		<h3>{{ level }}</h3>
-  		{% for blk in blks %}
-  			<a href="{{ blk.website_url }}"><img class="sponsorlogo" src="{{ blk.sponsor_image }}"></a>
-  		{% endfor %}
-  	{% endfor %}
+    {# Bit of a hack, but we want to order the sponsors according to the level ordering in the Sponsor block model #}
+    {% set sponsor_levels = this.body.blocks[0].flowblockmodel.field_map["level"].options["choices"].split(",")|map("trim") %}
+    {% set sponsors_by_level = dict(this.body.blocks|groupby("level")) %}
+    {% for level in sponsor_levels %}
+      {% if level in sponsors_by_level %}
+        <h3>{{ level }}</h3>
+        {% for sponsor in sponsors_by_level[level] %}
+          <a href="{{ sponsor.website_url }}"><img class="sponsorlogo" src="{{ sponsor.sponsor_image }}"></a>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 {% endblock %}
