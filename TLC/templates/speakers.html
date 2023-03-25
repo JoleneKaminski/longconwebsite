@@ -3,7 +3,7 @@
 {% block body %}
   <h2>Speakers {{ this.year }}</h2>
   <p>{{ this.header }}</p>
-  {% if this.body %}
+  {% if this.body and this.show_schedule %}
 	 {% for day, blks in this.body.blocks|groupby("day") %}
 	  <h3>{{ day }}</h3>
 	  <table>
