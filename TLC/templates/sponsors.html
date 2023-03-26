@@ -18,7 +18,7 @@
       {% if level in sponsors_by_level %}
         <h3>{{ level }}</h3>
         {% for sponsor in sponsors_by_level[level] %}
-          <a href="{{ sponsor.website_url }}"><img class="sponsorlogo" src="{{ sponsor.sponsor_image }}"></a>
+          <a href="{{ sponsor.website_url }}"><img class="sponsorlogo" src="{{ sponsor.sponsor_image }}" style="{{ sponsor.style }}"></a>
         {% endfor %}
       {% endif %}
     {% endfor %}
