@@ -27,7 +27,7 @@ website_url: https://www.trellix.com/en-us/index.html
 ----
 level: Platinum
 ----
-style: max-width:400px
+style: 
 #### sponsor ####
 sponsor_name: Powerland
 ----
@@ -37,7 +37,7 @@ website_url: https://powerland.ca/
 ----
 level: Platinum
 ----
-style: max-width:400px
+style: 
 #### sponsor ####
 sponsor_name: Paolo Alto Networks
 ----
@@ -48,3 +48,5 @@ website_url: https://www.paloaltonetworks.com/
 level: Gold
 ----
 style: 
+---
+year: 2019

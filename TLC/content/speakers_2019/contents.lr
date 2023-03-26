@@ -1,0 +1,96 @@
+_model: speakers
+---
+header: 
+---
+body:
+
+#### event ####
+title: Registration
+----
+time: 11:00-11:30
+----
+day: Saturday
+#### speaker ####
+speaker_name: Katherine Scrupa
+----
+speaker_bio: Katherine is a LAN Administrator whose (current) favourite past time is digging into Windows Internals and playing with PowerShell. She is a Manitoba UNIX User Group board member (2010-current), has a Network Technology, CCNA (Hons.) from RRC, and holds a GIAC Certified Windows Security Administrator (GCWN) Certification.
+----
+title: Rad Omens: The Good and Evil Uses of WMI, CIM
+----
+talk_description: Curious about Windows Management Instrumentation (WMI)? Katherine will explain what WMI is, and show you a variety of tools to navigate and query Windows’ implementation of WBEM and CIM. Become enlightened on how WMI can be used… and abused.
+----
+video_id: 7EgDqyPpmwQ
+----
+time: 11:30-12:20
+----
+day: Saturday
+#### speaker ####
+speaker_name: Richard Frovarp
+----
+speaker_bio: Richard Frovarp is a principal software engineer at North Dakota State University. There he focuses on identity and access management, federated authentication, and integrating a wide variety of systems together.
+----
+title: Capturing WPA2 Enterprise credentials with a Pi
+----
+talk_description: WPA2 Enterprise is a very common method of wireless authentication used at large organizations. These credentials can be harvested using a Raspberry Pi in many cases. I will cover how to setup the Pi using hostapd-wpe, and how various clients respond to the attacking Pi. I will also go over the most common SSID in use for higher education and the challenges that presents.
+----
+video_id: FcpoF8lrbWM
+----
+time: 12:30-12:50
+----
+day: Saturday
+#### event ####
+title: Lunch Break - Catered
+----
+time: 13:00-14:00
+----
+day: Saturday
+#### speaker ####
+speaker_name: Robert Wagner
+----
+speaker_bio: Robert Wagner is a security professional with 15+ years of InfoSec experience. He is a co-founder of the “Hak4Kidz” charity and a co-founder of BurbSecCon in Chicago, and is on the Board of Directors of the ISSA Chicago Chapter.
+----
+title: Defense on a budget: Free Tips & Tricks for Improving Security
+----
+talk_description: There is never enough budget or time to solve every security problem an organization faces. However, there are a lot of free or inexpensive tactics and techniques that every organization can leverage to make it harder for attackers to enter your environment. This presentation is a collection of basic tips and tricks learned from security professionals around the world These are tactics that either stop attackers in their tracks, or make it more difficult for them to succeed. You’ll walk away with actionable tips to fill your security gaps and help reduce your attack surface.
+----
+video_id: wVIj9TBSxnU
+----
+time: 
+----
+day: Saturday
+#### speaker ####
+speaker_name: Mike Saunders
+----
+speaker_bio: Mike Saunders is a principal consultant for Red Siege. He has over 25 years of experience in IT and security and has worked in the ISP, financial, insurance, and agribusiness industries. He has held a variety of roles in his career including system and network administration, development, and security architect. Mike been performing penetration tests for nearly a decade. Mike is an experienced speaker and has spoken at DerbyCon, BSides MSP, BSides Winnipeg / The Long Con, BSides KC, WWHF, and the NDSU Cyber Security Conference. He has participated multiple times as a member of NCCCDC Red Team.
+----
+title: Assumed Breach: A Better Model for Penetration Testing
+----
+talk_description: The current model for penetration testing is broken. The typical scan and exploit model doesn’t reflect how real attackers operate after establishing a foothold. At the same time, most organizations aren’t mature enough to need a proper red team assessment. It’s time to start adopting the assumed breach model. In this talk, I’ll discuss techniques for assumed breach assessments that provide a better model for emulating the techniques attackers use once they’re they’ve established a foothold inside a typical network.
+----
+video_id: 80n6kuDc4kI
+----
+time: 15:00-15:50
+----
+day: Saturday
+#### speaker ####
+speaker_name: Saulo Hachem
+----
+speaker_bio:
+
+Saulo is a BS in Computer Science with +5 years of experience in the information security field. Saulo developed strong business, coding, and infrastructure deployment skills while working on own side projects like Shellter Labs, a project he Co-Founded that is an online platform for practicing and training information security.
+
+He also competed in many coding and security contests, both alone and as a team captain, being 2 times South America's 1ºst place in Global Cyberlympics.
+----
+title: REST in peace. Exploiting GraphQL
+----
+talk_description: GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. It provides an alternative to REST and ad-hoc web service architectures. It is a fairly new language, but it is already being used on a lot of companies all over the world. As with every new language it brings pros and cons. The goal of this presentation is to present this language from a security perspective. We will understand how it differs from the current REST architecture and how attackers can exploit it with a few abuse case scenarios. We'll provide real-world examples of how to exploit GraphQL web applications using only free tools at your disposal. If you are a developer, pentester or bounty hunter and would like to know more about the benefits and the risks of using GraphQL on your application, this talk is for you!
+----
+video_id: f4L10ixKih4
+----
+time: 16:30-17:20
+----
+day: Sunday
+---
+year: 2019
+---
+show_schedule: yes
