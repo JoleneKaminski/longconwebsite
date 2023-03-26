@@ -7,17 +7,28 @@
     <h1><img src="/longcon.svg" class="inverted"/></h1>
     <nav>
       <ul class="nav navbar-nav">
+        {% set current_year = '2023' %}
         <li{% if this._path == '/' %} class="active"{% endif
           %}><a href="{{ '/'|url }}">Welcome</a></li>
         {% for href, title in [
           ['/about', 'About'],
-          ['/speakers', 'Schedule & Speakers'],
-          ['/sponsors', 'Sponsors'],
+          ['/speakers_' + current_year, 'Schedule & Speakers'],
+          ['/sponsors_' + current_year, 'Sponsors'],
           ['/contact', 'Contact']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
         {% endfor %}
+	<ul>
+	{% for year, pages in site.get('/').children | selectattr("year") | groupby("year") %}
+		{% if year|string != current_year|string %}
+			<li>Year {{ year }}</li>
+			{% for page in pages %}
+			<li><a href="{{ page|url }}">{{ page._model | title }}</a></li>
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+	</ul>
       </ul>
     </nav>
   </header>
