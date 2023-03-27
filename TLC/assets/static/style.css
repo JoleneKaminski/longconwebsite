@@ -31,15 +31,29 @@ header h1 {
 }
 
 header nav ul {
+    display: flex;
     list-style: none;
+    width: 100%;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
-    display: inline;
     margin: 0 8px 0 0;
     padding: 0;
+}
+
+@media(max-width: 680px) {
+
+  header, footer, div.page {
+    width: 600px;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
 }
 
 div.page {
@@ -101,4 +115,20 @@ tr:nth-child(even) {
 td {
     padding: 5px 10px;
     text-align: left;
+}
+
+.dropdown {
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content .submenu-active {
+  display: block;
 }

@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
 <title>{% block title %}Welcome{% endblock %} — The Long Con</title>
+<script src="{{ '/static/functions.js' |url }}"></script>
 <body>
   <header>
     <h1><img src="/longcon.svg" class="inverted"/></h1>
@@ -19,16 +20,19 @@
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
         {% endfor %}
-	<ul>
-	{% for year, pages in site.get('/').children | selectattr("year") | groupby("year") %}
-		{% if year|string != current_year|string %}
-			<li>Year {{ year }}</li>
-			{% for page in pages %}
-			<li><a href="{{ page|url }}">{{ page._model | title }}</a></li>
-			{% endfor %}
-		{% endif %}
-	{% endfor %}
-	</ul>
+        <div class="dropdown" >
+          <li>Archive</li>
+          <ul class="dropdown-content">
+            {% for year, pages in site.get('/').children | selectattr("year") | groupby("year") %}
+              {% if year|string != current_year|string %}
+                <li>Year {{ year }}</li>
+                  {% for page in pages %}
+                    <li><a href="{{ page|url }}">{{ page._model | title }}</a></li>
+                  {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
       </ul>
     </nav>
   </header>
